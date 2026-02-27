@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letters From My Heart 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="letters-page">
+    <div class="container">
+        <!-- Section 1: Four Envelopes -->
+        <div id="envelopesSection" class="envelopes-section">
+            <h1 class="page-title">Letters From My Heart 💌</h1>
+            
+            <div class="envelopes-grid">
+                <!-- Envelope 1 -->
+                <div class="envelope-card" onclick="openLetter(1)">
+                    <div class="envelope-icon">💌</div>
+                    <p class="envelope-label">Letter 1</p>
+                </div>
+                
+                <!-- Envelope 2 -->
+                <div class="envelope-card" onclick="openLetter(2)">
+                    <div class="envelope-icon">💌</div>
+                    <p class="envelope-label">Letter 2</p>
+                </div>
+                
+                <!-- Envelope 3 -->
+                <div class="envelope-card" onclick="openLetter(3)">
+                    <div class="envelope-icon">💌</div>
+                    <p class="envelope-label">Letter 3</p>
+                </div>
+                
+                <!-- Envelope 4 -->
+                <div class="envelope-card" onclick="openLetter(4)">
+                    <div class="envelope-icon">💌</div>
+                    <p class="envelope-label">Letter 4</p>
+                </div>
+            </div>
+            
+            <!-- Button to Final Letter (Hidden Initially) -->
+            <button class="final-letter-btn hidden" id="finalLetterBtn" onclick="showFinalLetter()">
+                One Last Letter 💌
+            </button>
+        </div>
+        
+        <!-- Section 2: Final Big Letter -->
+        <div id="finalLetterSection" class="final-letter-section hidden">
+            <div class="big-letter-card">
+                <div class="letter-paper">
+                    <h2 class="final-letter-title">My Final Words For You 💕</h2>
+                    <div class="final-letter-content">
+                        <p class="final-letter-text">
+                            My Dearest Aishu ❤️
+                            <br><br>
+                            From random pictures to unforgettable videos, every single memory with you is so special to me. That random picture turned out to be my favorite, especially when I see you in that pink dress — you look absolutely beautiful.
+                            <br><br>
+                            In one picture, you looked like someone who never hesitates to do anything for me. I still remember how happy I felt when you tied my shoelaces for the first time — that moment meant so much to me.
+                            <br><br>
+                            You looked unbelievably cute in that saree, like a little doll. I truly loved your mom's decision to make you wear it. And the fact that you came 17 km wearing that saree just to meet me… that touched my heart deeply.
+                            <br><br>
+                            I remember when you had class and were feeling sleepy — you looked so adorable and tired. It made me just want to take care of you and be there for you always.
+                            <br><br>
+                            After watching that one video, I literally ran to meet you. It felt like something was pulling me straight towards you. That video also reminds me of all our beautiful moments visiting Ganpati Bappa's darshan together. Thank you for always being ready to go anywhere with me and make memories.
+                            <br><br>
+                            And yes 😅 the video you sent only once — I had to save it from another phone. That's how special it is to me.
+                            <br><br>
+                            My little penguin 😂❤️ Sometimes it really feels like this cute penguin came down to earth just for me.
+                            <br><br>
+                            Aishu, I love you so much. I am truly happy to spend time with you — every single moment feels precious. There are so many more memories waiting for us in the future, and I know we will create them together with happiness and love.
+                            <br><br>
+                            Happy Birthday, my darling ❤️
+                            <br>
+                            My love, my Aishu,
+                            <br>
+                            My ardhangini ❤️
+                        </p>
+                    </div>
+                    
+                    <button class="whatsapp-btn" onclick="goToWhatsApp()">
+                        Let's Stay Together Forever ❤️
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Sparkles -->
+        <div class="heart-particles" id="heartParticles"></div>
+    </div>
+
+    <!-- Letter Modal for Videos -->
+    <div id="letterModal" class="letter-modal">
+        <div class="modal-backdrop" onclick="closeLetterModal()"></div>
+        <div class="letter-modal-card" id="letterCard">
+            <button class="close-letter-btn" onclick="closeLetterModal()">✕</button>
+            
+            <div class="letter-video-wrapper">
+                <!-- Video Container -->
+                <div class="video-container">
+                    <video id="letterVideo" class="letter-video" controls></video>
+                </div>
+                
+                <!-- Message Below Video -->
+                <p class="video-message" id="videoMessage">
+                    Write your memory message here ❤️
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

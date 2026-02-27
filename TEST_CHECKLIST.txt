@@ -1,0 +1,79 @@
+🧪 TESTING CHECKLIST
+====================
+
+Before sharing your birthday website, test each feature:
+
+📄 INDEX.HTML (Countdown Page)
+□ Countdown timer displays correctly
+□ Hours, minutes, seconds update every second
+□ Floating hearts animation works
+□ Auto-redirects to birthday.html when countdown reaches zero
+
+🎂 BIRTHDAY.HTML (Cake Page)
+□ Step 1: Emoji cake displays large and centered
+□ "Tap to Enter 🎂" button works
+□ Step 2: Candle rises from cake with flame
+□ "Blow the Candle 💨" button works
+□ Flame disappears with smoke effect
+□ Birthday song plays (or "Play Song" button appears)
+□ Step 3: "Cut the Cake 🎂" button appears after 2 seconds
+□ Step 4: Special images appear after cutting
+□ Confetti animation plays
+□ Auto-redirects to memories.html after 5 seconds
+
+🎈 MEMORIES.HTML (Balloon Memories)
+□ Balloons float continuously from bottom to top
+□ Clicking balloon makes it pop
+□ Memory photo appears after balloon pops
+□ Each memory has custom message below photo
+□ All 6 memories can be revealed
+□ "Aur bhi abhi hai 💌" button appears after all memories
+□ Button redirects to letters.html
+
+💌 LETTERS.HTML (Love Letters)
+□ 4 envelope icons display in grid
+□ Clicking envelope opens modal with letter
+□ Letter 1 shows video1.mp4
+□ Letter 2 shows video2.mp4
+□ Letter 3 shows text message
+□ Letter 4 shows text message
+□ Close button (X) works
+□ "Let's Talk Forever ❤️" button appears after opening all 4
+□ Button redirects to WhatsApp with pre-written message
+
+📱 MOBILE RESPONSIVE
+□ Test on phone browser
+□ All text is readable
+□ Buttons are easy to tap
+□ Images fit screen properly
+□ Animations work smoothly
+
+🎨 VISUAL CHECKS
+□ Pink/pastel theme consistent across all pages
+□ No broken images (check browser console)
+□ No JavaScript errors (check browser console)
+□ Smooth transitions between pages
+□ All animations play correctly
+
+⚙️ CONFIGURATION
+□ birthdayDate is set correctly in script.js
+□ whatsappNumber includes country code (e.g., 919876543210)
+□ whatsappMessage is customized
+□ All memory messages are personalized
+□ All letter messages are personalized
+
+📁 FILES PRESENT
+□ assets/music/birthday.mp3
+□ assets/images/special1.jpg
+□ assets/images/special2.jpg
+□ assets/images/memory1.jpg through memory6.jpg
+□ assets/videos/video1.mp4
+□ assets/videos/video2.mp4
+
+🚀 FINAL TEST
+□ Start from index.html
+□ Go through entire flow without interruption
+□ Verify WhatsApp redirect works with correct message
+□ Test on both desktop and mobile
+
+✅ ALL CHECKS PASSED? YOU'RE READY TO SHARE! 💕

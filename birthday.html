@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="birthday-page">
+    <div class="container">
+        <!-- Step 1: Initial Cake -->
+        <div id="cakeStep1" class="cake-step active">
+            <div class="cake-display">
+                <div class="cake-emoji">🎂</div>
+            </div>
+            <button class="glow-btn" onclick="enterCake()">Tap to Enter 🎂</button>
+        </div>
+
+        <!-- Step 2: Cake with Candle -->
+        <div id="cakeStep2" class="cake-step">
+            <div class="cake-with-candles">
+                <div class="cake-base">🎂</div>
+                <div class="candle-simple" id="candleSimple">
+                    🕯️<span class="flame-simple" id="flameToExtinguish">🔥</span>
+                </div>
+            </div>
+            <button class="glow-btn" onclick="blowCandles()">Blow the Candle 💨</button>
+        </div>
+
+        <!-- Step 3: After Blowing - Show Cut Button -->
+        <div id="cakeStep3" class="cake-step">
+            <div class="cake-with-candles">
+                <div class="cake-base">🎂</div>
+            </div>
+            <button class="glow-btn" onclick="cutCake()">Cut the Cake 🎂</button>
+        </div>
+
+        <!-- Step 4: After Cutting - Show Special Images -->
+        <div id="cakeStep4" class="cake-step">
+            <div class="cake-display">
+                <div class="cake-emoji celebration">🎂</div>
+            </div>
+            
+            <h1 class="birthday-title">Happy Birthday My Love ❤️</h1>
+            
+            <!-- Special Romantic Images -->
+            <div class="special-images" id="specialImages">
+                <div class="special-image-card">
+                    <img src="assets/images/special1.jpg" alt="Special Moment 1" class="special-img">
+                </div>
+                <div class="special-image-card">
+                    <img src="assets/images/special2.jpg" alt="Special Moment 2" class="special-img">
+                </div>
+            </div>
+            
+            <p class="redirect-message">Taking you to our memories... 💕</p>
+        </div>
+
+        <!-- Background elements -->
+        <div class="sparkles" id="sparkles"></div>
+        <canvas id="confettiCanvas"></canvas>
+        
+        <!-- YouTube Player (Hidden) -->
+        <div id="youtubePlayer"></div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
