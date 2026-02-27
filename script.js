@@ -28,26 +28,9 @@ let youtubePlayer;
 // COUNTDOWN PAGE FUNCTIONS
 // ========================================
 function startCountdown() {
-    const countdownDate = new Date(CONFIG.birthdayDate).getTime();
-    
-    const timer = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        
-        if (distance < 0) {
-            clearInterval(timer);
-            // Redirect to birthday page
-            window.location.href = 'birthday.html';
-            return;
-        }
-        
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    // Redirect to birthday page after 1 second
+    setTimeout(() => {
+        window.location.href = 'birthday.html';
     }, 1000);
 }
 
